@@ -1,6 +1,6 @@
 package com.amimais.domain.repository;
 
-import com.amimais.domain.model.Usuario;
+import com.amimais.domain.model.User.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.User;
 
 import jakarta.persistence.*;
 import lombok.Data;

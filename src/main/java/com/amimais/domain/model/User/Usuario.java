@@ -1,9 +1,8 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.User;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.amimais.domain.model.Animal;
+import com.amimais.domain.model.endereco.Endereco;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -36,4 +35,7 @@ public class Usuario {
     private OffsetDateTime dataAtualizacao;
 
     private Set<Animal> amais = new HashSet<>();
+
+    @Embedded
+    private Endereco endereco;
 }
