@@ -1,4 +1,4 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.endereco;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

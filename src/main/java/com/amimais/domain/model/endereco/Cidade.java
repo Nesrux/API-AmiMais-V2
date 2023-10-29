@@ -1,4 +1,4 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.endereco;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,20 +7,14 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+@Data
 @Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Data
-public class Endereco {
+public class Cidade {
     @Id
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private Cidade cidade;
-
-    private String cep;
-
-    private String logradouro;
-
-    private String numero;
+    private String nome;
+    private Estado estado;
 }
