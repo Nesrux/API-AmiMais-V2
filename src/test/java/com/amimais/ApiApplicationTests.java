@@ -1,4 +1,4 @@
-package com.amimais.api;
+package com.amimais;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
