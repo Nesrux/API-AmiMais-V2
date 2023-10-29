@@ -1,6 +1,5 @@
 package com.amimais;
 
-import com.amimais.domain.model.Usuario;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

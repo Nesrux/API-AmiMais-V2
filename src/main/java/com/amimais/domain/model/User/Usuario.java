@@ -1,6 +1,6 @@
 package com.amimais.domain.model.User;
 
-import com.amimais.domain.model.Animal;
+import com.amimais.domain.model.animal.Animal;
 import com.amimais.domain.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.Data;

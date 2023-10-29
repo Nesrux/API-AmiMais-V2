@@ -1,7 +1,7 @@
 package com.amimais.domain.service;
 
 import com.amimais.domain.exceptions.AnimalNaoEncontradoException;
-import com.amimais.domain.model.Animal;
+import com.amimais.domain.model.animal.Animal;
 import com.amimais.domain.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,9 @@
 package com.amimais.domain.model.endereco;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,11 +16,13 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String numero;
+
     private Cidade cidade;
 
     private String cep;
 
     private String logradouro;
 
-    private String numero;
+    private String observacao;
 }
