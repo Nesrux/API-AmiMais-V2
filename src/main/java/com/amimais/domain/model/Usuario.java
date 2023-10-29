@@ -27,7 +27,5 @@ public class Usuario {
     @UpdateTimestamp
     private OffsetDateTime dataAtualizacao;
 
-    public void a(){
-    }
 
 }
