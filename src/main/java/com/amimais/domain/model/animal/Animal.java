@@ -1,5 +1,6 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.animal;
 
+import com.amimais.domain.model.User.Usuario;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;

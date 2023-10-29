@@ -1,5 +1,7 @@
-package com.amimais.domain.model;
+package com.amimais.domain.model.empresa;
 
+import com.amimais.domain.model.User.Usuario;
+import com.amimais.domain.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,6 +12,7 @@ import java.util.Set;
 @Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Empresa {
+
     @Id
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
