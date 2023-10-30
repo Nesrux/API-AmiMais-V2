@@ -29,4 +29,6 @@ public class Animal {
     @UpdateTimestamp
     private OffsetDateTime dataAtualizacao;
 
+    private boolean isAdotado;
+
 }
