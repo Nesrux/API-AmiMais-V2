@@ -1,9 +1,11 @@
 package com.amimais.domain.model.animal;
 
 import com.amimais.domain.model.User.Usuario;
+import com.amimais.domain.model.empresa.Empresa;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -21,7 +23,10 @@ public class Animal {
 
     private String nome;
 
-    private Usuario dono;
+    private Usuario tutor;
+
+    @JoinColumn(name = "empresa_id")
+    private Empresa ong;
 
     @CreationTimestamp
     private OffsetDateTime dataCriacao;
